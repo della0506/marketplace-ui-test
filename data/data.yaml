@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+#url
+delysium_url: https://www.delysium.com/
+medium_url: https://delysium.medium.com/
+twitter_url: https://twitter.com/The_Delysium
+discord_url: https://discord.com/invite/delysium
+telegram_url: https://t.me/TheDelysium
+youtube_url: https://www.youtube.com/channel/UCalVfmQbvDKVZlz8Cypo9xA/about
+
+#NFT
+no_nft: The NFT you are searching for cannot be found
+collectibles_name: Fading Serenity
+weapon_name: Deep Ocean
+comming_soon: Coming Soon...
+inventory_no_nft: There are No NFTs in Your Inventory
+
+#wallet
+connect_title: Connect Your Wallet
+
+

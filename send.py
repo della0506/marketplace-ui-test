@@ -4,6 +4,7 @@ import requests
 import json
 
 def testReport():
+    """send report to Feishu"""
     path = os.getcwd() + '/reports'
     name = os.listdir(path)
     print(type(name),name)
@@ -22,7 +23,7 @@ def testReport():
                 "actions": [{
                         "tag": "button",
                         "text": {
-                                "content": "点击查看测试报告 🔍",
+                                "content": "Click For Details 🔍",
                                 "tag": "lark_md"
                         },
                         "url": "https://jenkins.dev-metaverse.fun/view/test/job/test-pegasus-ui-automation/_e5afb9_e8af9d_e7b3bb_e7bb9fUI_e887aa_e58aa8_e58c96_e6b58b_e8af95_e68aa5_e5918a/",
@@ -33,7 +34,7 @@ def testReport():
         }],
         "header": {
                 "title": {
-                        "content": "🔔 Pegasus管理后台UI自动化回归测试",
+                        "content": "🔔 Marketplace UI Automation Testing Report",
                         "tag": "plain_text"
                 }
         }
