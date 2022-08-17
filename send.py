@@ -26,7 +26,7 @@ def testReport():
                                 "content": "Click For Details 🔍",
                                 "tag": "lark_md"
                         },
-                        "url": "https://jenkins.dev-metaverse.fun/view/test/job/test-pegasus-ui-automation/_e5afb9_e8af9d_e7b3bb_e7bb9fUI_e887aa_e58aa8_e58c96_e6b58b_e8af95_e68aa5_e5918a/",
+                        "url": "https://jenkins.dev-metaverse.fun/view/test/job/test-marketplace-ui-automation/Marketplace_20Test_20Report/",
                         "type": "default",
                         "value": {}
                 }],
