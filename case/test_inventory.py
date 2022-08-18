@@ -40,7 +40,7 @@ class InventoryTest(seldom.TestCase):
         self.assertText(commonFunc.readYaml(self).get('connect_title'))
         self.assertText('MetaMask')
         page.discord_link.click()
-        self.assertUrl(commonFunc.readYaml(self).get('discord_url'))
+        self.assertUrl(commonFunc.readYaml(self).get('wallet_discord_url'))
 
     def test03(self):
         """Click Collectibles type"""
