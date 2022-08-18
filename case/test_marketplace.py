@@ -176,9 +176,8 @@ class MarketplaceTest(seldom.TestCase):
 
     def test21(self):
         """Scroll page"""
-        self.window_scroll(width=0, height=10000)
+        self.window_scroll(width=0, height=20000)
         self.wait(1)
-        self.assertNotText(commonFunc.readYaml(self).get('weapon_name'))
 
     def test22(self):
         """Check copyright"""
