@@ -61,7 +61,7 @@ class MarketplacePage(Page):
     ultimate_select = Element(xpath='//li[@data-value="Ultimate"]')
 
     #nft name
-    nft_name = Element(xpath='//div[@id="root"]/div[3]/div/div[3]/div[2]/div/a/div/div[1]/p')
+    nft_name = Element(xpath='//div[starts-with(@class,"MuiCardContent-root")]/div[1]/p')
 
     #right
     copyright = Element(xpath='//p[contains(text(),"Copyright")]')
