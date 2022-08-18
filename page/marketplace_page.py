@@ -31,16 +31,16 @@ class MarketplacePage(Page):
     battle_pass_link = Element(xpath='//button[contains(text(),"Battle Pass")]')
 
     #Search
-    search_input = Element(xpath='//input[@id="mui-4"]')
+    search_input = Element(xpath='//input[starts-with(@class,"MuiOutlinedInput-input")]')
 
     #Rarity
-    rarity_select = Element(xpath='//*[@id="root"]/div[3]/div/div[3]/div[1]/div[2]/div/div')
+    rarity_select = Element(xpath='//div[starts-with(@class,"MuiSelect-select")]')
 
     #Rarity list
     rarity_list = Element(xpath='//div[@id="menu-"]/div[3]/ul')
 
     #Rarity value
-    rarity_value = Element(xpath='//*[@id="root"]/div[3]/div/div[3]/div[1]/div[2]/div/div/input')
+    rarity_value = Element(xpath='//input[starts-with(@class,"MuiSelect-nativeInput")]')
 
     #all
     all_select = Element(xpath='//li[contains(text(),"all rarities")]')
