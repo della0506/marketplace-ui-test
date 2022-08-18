@@ -34,7 +34,7 @@ class CommunityTest(seldom.TestCase):
 
     def test02(self):
         """Open medium"""
-        page.community_tab.click_and_hold()
+        page.community_tab.click()
         page.medium_link.click()
         self.switch_to_window(1)
         self.assertUrl(commonFunc.readYaml(self).get('medium_url'))
