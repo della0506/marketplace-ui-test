@@ -29,7 +29,6 @@ class MarketplaceTest(seldom.TestCase):
         page.icon_link.click()
         self.switch_to_window(1)
         self.assertUrl(commonFunc.readYaml(self).get('delysium_url'))
-        self.switch_to_window(0)
 
     def test02(self):
         """Click Collectibles type"""
@@ -176,8 +175,10 @@ class MarketplaceTest(seldom.TestCase):
 
     def test21(self):
         """Scroll page"""
-        self.window_scroll(width=0, height=20000)
+        self.window_scroll(width=0, height=10000)
         self.wait(1)
+        self.window_scroll(width=0, height=10000)
+        self.assertText(commonFunc.readYaml(self).get('scroll_nft'))
 
     def test22(self):
         """Check copyright"""
