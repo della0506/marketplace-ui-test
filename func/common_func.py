@@ -22,6 +22,6 @@ class commonFunc():
         return data
 
     def pageToString(self,page):
-        """Transfer element to string"""
+        """Filter element form page"""
         ele = str(page)[14:-1]
         return ele
