@@ -91,7 +91,7 @@ class InventoryTest(seldom.TestCase):
         """Open rarity select"""
         m_page.rarity_select.click()
         self.wait(1)
-        self.assertElement(m_page.rarity_list.text)
+        self.assertElement(xpath=commonFunc.pageToString(self,m_page.rarity_list))
 
     def test12(self):
         """Filter rarity-common"""
