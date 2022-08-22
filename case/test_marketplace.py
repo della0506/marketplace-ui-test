@@ -86,7 +86,7 @@ class MarketplaceTest(seldom.TestCase):
         """Open rarity select"""
         page.rarity_select.click()
         self.wait(1)
-        self.assertElement(xpath=commonFunc.pageToString(self,page.rarity_list))
+        self.assertElement(xpath=commonFunc.pageElement(self))
 
     def test12(self):
         """Filter rarity-common"""
