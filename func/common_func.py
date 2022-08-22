@@ -23,5 +23,5 @@ class commonFunc():
 
     def pageToString(self,page):
         """Transfer element to string"""
-        ele = str(page)[8:-1]
+        ele = str(page)[14:-1]
         return ele
