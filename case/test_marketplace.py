@@ -25,9 +25,10 @@ class MarketplaceTest(seldom.TestCase):
 
     def test01(self):
         """Click logo"""
-        self.wait(1)
         page.icon_link.click()
         self.switch_to_window(1)
+        self.refresh()
+        self.wait(1)
         self.assertUrl(commonFunc.readYaml(self).get('delysium_url'))
 
     def test02(self):
@@ -85,7 +86,7 @@ class MarketplaceTest(seldom.TestCase):
         """Open rarity select"""
         page.rarity_select.click()
         self.wait(1)
-        self.assertElement(commonFunc.pageToString(self,page.rarity_list))
+        self.assertElement(xpath=commonFunc.pageToString(self,page.rarity_list))
 
     def test12(self):
         """Filter rarity-common"""
