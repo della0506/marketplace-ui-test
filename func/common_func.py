@@ -21,7 +21,7 @@ class commonFunc():
         fs.close()
         return data
 
-    def pageToString(self,page):
+    def pageElement(self):
         """Filter element form page"""
-        ele = str(page)[14:-1]
+        ele = '//div[@id="menu-"]/div[3]/ul'
         return ele
