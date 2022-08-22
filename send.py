@@ -12,14 +12,14 @@ def testReport():
     fileName = list(filter(lambda a:a.find("result") >= 0,name))
     print(fileName)
     print(path+'/'+''.join(fileName))
-    with open(path+'/'+''.join(fileName),'r') as f:
+    with open('/var/lib/jenkins/workspace/test-marketplace-ui-automation/reports/'+''.join(fileName),'r') as f:
         soup = BeautifulSoup(f.read(),'html.parser')
         passNum = soup.select('span[class="badge badge-pill bg-soft-success text-success me-2"]')[0].text
         failNum = soup.select('span[class="badge badge-pill bg-soft-warning text-warning me-2"]')[0].text
         errNum = soup.select('span[class="badge badge-pill bg-soft-danger text-danger me-2"]')[0].text
         all = passNum + failNum + errNum
     print(all)
-
+ test
     """Send report to Feishu"""
     p = {
     "msg_type": "interactive",
