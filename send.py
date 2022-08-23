@@ -6,13 +6,13 @@ from bs4 import BeautifulSoup
 
 def testReport():
     """Read test report html"""
-    path = os.getcwd() + '/reports'
+    path = '/var/lib/jenkins/jobs/test-marketplace-ui-automation/htmlreports/Marketplace_20Test_20Report/'
     name = os.listdir(path)
     print(type(name),name)
     fileName = list(filter(lambda a:a.find("result") >= 0,name))
     print(fileName)
     print(path+'/'+''.join(fileName))
-    with open('/var/lib/jenkins/jobs/test-marketplace-ui-automation/htmlreports/Marketplace_20Test_20Report/'+''.join(fileName),'r') as f:
+    with open(path+''.join(fileName),'r') as f:
         soup = BeautifulSoup(f.read(),'html.parser')
         passNum = soup.select('span[class="badge badge-pill bg-soft-success text-success me-2"]')[0].text
         failNum = soup.select('span[class="badge badge-pill bg-soft-warning text-warning me-2"]')[0].text
