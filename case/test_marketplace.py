@@ -28,8 +28,8 @@ class MarketplaceTest(seldom.TestCase):
         page.icon_link.click()
         self.switch_to_window(1)
         self.refresh()
-        self.assertUrl(commonFunc.readYaml(self).get('delysium_url'))
         self.sleep(1)
+        self.assertUrl(commonFunc.readYaml(self).get('delysium_url'))
 
     def test02(self):
         """Click Collectibles type"""
