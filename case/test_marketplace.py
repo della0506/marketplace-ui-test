@@ -26,7 +26,7 @@ class MarketplaceTest(seldom.TestCase):
     def test01(self):
         """Click logo"""
         page.icon_link.click()
-        self.switch_to_window(1)
+        self.switch_to_window(6)
         self.refresh()
         self.sleep(1)
         self.assertUrl(commonFunc.readYaml(self).get('delysium_url'))
