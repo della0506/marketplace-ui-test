@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
 import os
+import sys
 import requests
 import json
 from bs4 import BeautifulSoup
 
 def testReport():
     """Read test report html"""
-    path = '/var/lib/jenkins/jobs/test-marketplace-ui-automation/htmlreports/Marketplace_20Test_20Report/'
+    job_name = sys.argv[1]
+    path = '/var/lib/jenkins/jobs/'+job_name+'/htmlreports/Marketplace_20Test_20Report/'
     name = os.listdir(path)
     print(type(name),name)
     fileName = list(filter(lambda a:a.find("result") >= 0,name))
