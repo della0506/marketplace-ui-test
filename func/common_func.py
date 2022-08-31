@@ -6,7 +6,7 @@ class commonFunc():
 
     def baseUrl(self):
         """test env"""
-        baseUrl = 'https://delysium-market.vercel.app/'
+        baseUrl = 'https://marketplace.delysium.com/'
         return baseUrl
 
     def testText(self):
