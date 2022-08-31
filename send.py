@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 def testReport():
     """Read test report html"""
     job_name = sys.argv[1]
-    path = '/var/lib/jenkins/jobs/'+job_name+'/htmlreports/Marketplace_20Test_20Report/'
+    path = 'C:\\jenkins_home\\workspace\\'+job_name+'\\reports'
     name = os.listdir(path)
     print(type(name),name)
     fileName = list(filter(lambda a:a.find("result") >= 0,name))
@@ -42,7 +42,7 @@ def testReport():
                                     "content": "🔍 CLICK HERE FOR DETAILS",
                                     "tag": "lark_md"
                             },
-                            "url": "https://jenkins.dev-metaverse.fun/view/test/job/test-marketplace-ui-automation/Marketplace_20Test_20Report/",
+                            "url": "https://jenkins.dev-metaverse.fun/view/test/job/"+job_name+"/Marketplace_20Test_20Report/",
                             "type": "default",
                             "value": {}
                     }],
