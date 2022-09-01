@@ -32,7 +32,7 @@ def testReport():
             {
                 "tag": "div",
                 "text": {
-                    "content": f"From Jenkins Job:{job_name}",
+                    "content": f"Jenkins Job Name: {job_name}",
                     "tag": "lark_md"
                 }
             }, {
