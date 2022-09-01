@@ -8,12 +8,12 @@ from bs4 import BeautifulSoup
 def testReport():
     """Read test report html"""
     job_name = sys.argv[1]
-    path = 'C:\jenkins_home\workspace\\'+job_name+'\reports'
+    path = 'c:\jenkins_home\workspace\\'+job_name+'\reports'
     name = os.listdir(path)
     print(type(name),name)
     fileName = list(filter(lambda a:a.find("result") >= 0,name))
     print(fileName)
-    print(path+'/'+''.join(fileName))
+    print(path+'\'+''.join(fileName))
     with open(path+''.join(fileName),'r') as f:
         soup = BeautifulSoup(f.read(),'html.parser')
         passNum = soup.select('span[class="badge badge-pill bg-soft-success text-success me-2"]')[0].text
