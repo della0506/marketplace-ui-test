@@ -32,6 +32,12 @@ def testReport():
             {
                 "tag": "div",
                 "text": {
+                    "content": f"From Jenkins Job:{job_name}",
+                    "tag": "lark_md"
+                }
+            }, {
+                "tag": "div",
+                "text": {
                     "content": f"{passNum}     ｜     {failNum}     ｜     {errNum}",
                     "tag": "lark_md"
                 }
@@ -50,7 +56,7 @@ def testReport():
             }],
             "header": {
                     "title": {
-                            "content": f"🔔 Marketplace UI Automation Test Report",
+                            "content": f"🔔 UI Automation Test Report",
                             "tag": "plain_text"
                     }
             }
