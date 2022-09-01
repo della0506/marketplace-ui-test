@@ -48,7 +48,7 @@ def testReport():
                                     "content": "🔍 CLICK HERE FOR DETAILS",
                                     "tag": "lark_md"
                             },
-                            "url": "https://jenkins.dev-metaverse.fun/view/test/job/"+job_name+"/Marketplace_20Test_20Report/",
+                            "url": "https://jenkins.dev-metaverse.fun/view/test/job/"+job_name+"/UI_20Test_20Report/",
                             "type": "default",
                             "value": {}
                     }],
