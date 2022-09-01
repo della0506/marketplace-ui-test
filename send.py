@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 def testReport():
     """Read test report html"""
     job_name = sys.argv[1]
-    path = 'C:\\jenkins_home\\workspace\\'+job_name+'\\reports\\'
+    path = 'C:\jenkins_home\workspace\\'+job_name+'\reports'
     name = os.listdir(path)
     print(type(name),name)
     fileName = list(filter(lambda a:a.find("result") >= 0,name))
