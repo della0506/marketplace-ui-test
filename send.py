@@ -62,7 +62,11 @@ def testReport():
             }
         }
     }
-    toFS = requests.post('https://open.feishu.cn/open-apis/bot/v2/hook/1eba2ae5-9ad4-4acc-b3fe-3b53ce9f97a7',json.dumps(p))
+    if 'marketplace' in job_name == True:
+        bot = 'https://open.feishu.cn/open-apis/bot/v2/hook/1eba2ae5-9ad4-4acc-b3fe-3b53ce9f97a7'
+    else:
+        bot = 'https://open.feishu.cn/open-apis/bot/v2/hook/0da6a938-d932-4e91-86a0-86a3d43ecf11'
+    toFS = requests.post(bot,json.dumps(p))
     print(toFS.status_code, toFS.json())
     return toFS
 
