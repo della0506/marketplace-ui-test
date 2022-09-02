@@ -29,4 +29,6 @@ class LoginTest(seldom.TestCase):
         page.password_input.input('2wsx@WSX')
         page.play_but.click()
         self.wait(1)
-        self.assertText('')
+        self.assertText('Server Browser')
+        self.assertText('Beijing')
+        
