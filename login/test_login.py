@@ -28,7 +28,8 @@ class LoginTest(seldom.TestCase):
         page.email_input.input('wanglijie@rct.ai')
         page.password_input.input('2wsx@WSX')
         page.play_but.click()
-        self.wait(1)
+        page.close.click()
+        self.wait(2)
         self.assertText('Server Browser')
         self.assertText('Beijing')
         
