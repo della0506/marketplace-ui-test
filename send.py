@@ -8,6 +8,7 @@ from bs4 import BeautifulSoup
 def testReport():
     """Read test report html"""
     job_name = sys.argv[1]
+    #path = os.getcwd() + '/reports/'
     path = os.getcwd() + '\\reports\\'
     name = os.listdir(path)
     print(type(name),name)
