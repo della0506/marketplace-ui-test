@@ -11,3 +11,6 @@ class LoginPage(Page):
 
     #password
     password_input = Element(xpath='//label[contains(text(),"Password")]/following-sibling::div/div/input')
+    
+    #close
+    close = Element(xpath='//div[@class="dialog-close"]')
