@@ -25,8 +25,8 @@ class LoginTest(seldom.TestCase):
         """login"""
         page.play_but.click()
         self.assertText('Forget Password')
-        page.email_input.input('wanglijie@rct.ai')
-        page.password_input.input('2wsx@WSX')
+        page.email_input.input('linyunong@rct.ai')
+        page.password_input.input('Mywork-0')
         page.play_but.click()
         page.close.click()
         self.wait(2)
