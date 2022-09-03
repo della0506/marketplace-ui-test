@@ -31,5 +31,3 @@ class LoginTest(seldom.TestCase):
         page.close.click()
         self.wait(2)
         self.assertText('Server Browser')
-        self.assertText('Beijing')
-        
