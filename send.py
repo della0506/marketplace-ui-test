@@ -63,12 +63,14 @@ def testReport():
             }
         }
     }
-    if 'login' in job_name and str(failNum[-1:]) !='0':
+    send = failNum[-1:] == '1'
+    print(send)
+    if 'login' in job_name and send is True:
         bot = 'https://open.feishu.cn/open-apis/bot/v2/hook/8a867803-98ca-4e28-b483-3168da9bf498'
     else:
         bot = 'https://open.feishu.cn/open-apis/bot/v2/hook/1eba2ae5-9ad4-4acc-b3fe-3b53ce9f97a7'
     toFS = requests.post(bot,json.dumps(p))
-    print(toFS.status_code, toFS.json())
+    print(bot, toFS.status_code, toFS.json())
     return toFS
 
 if __name__ == '__main__':
